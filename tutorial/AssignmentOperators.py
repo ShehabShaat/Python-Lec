@@ -16,4 +16,3 @@ print("="*10+" x -= y "+"="*10)
 x -= y # x = x - y
 print(x)
 
-print("="*20)

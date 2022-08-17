@@ -1,0 +1,2 @@
+name = ""
+print(name.isspace())

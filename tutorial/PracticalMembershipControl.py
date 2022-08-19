@@ -18,9 +18,9 @@ if username in admins:
 else:
     print("your not admin, add u ? Y or N ")
     ans = input("Enter Your Answer : ").strip().capitalize()
-    if ans == "Y" or "yes":
+    if ans == "y" or ans == "yes":
         admins.append(username)
         print("your name is added..")
-        # print(admins)
+        print(admins)
     else:
         print("u are not added ")

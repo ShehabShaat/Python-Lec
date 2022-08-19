@@ -27,4 +27,18 @@ else :
     print("="*100)
     
     
+    # ==================================================================================
+    # ernary Conditional Operator
+    print("="*50)
+    wCountry = input("Enter Your Country : ").capitalize().strip()
+    if wCountry == "Palestine" : print(f"The wether in {wCountry} is 15")
+    elif wCountry == "KSA" : print(f"The wether in {wCountry} is 50")
+    else : print(f"The wether in {wCountry} is 10")
     
+
+movieRate = 18
+age = 16
+if age > movieRate: print("movie is good for you")
+else : print("movie is not good for you")
+        # sort if 
+print("movie is good for you" if age > movieRate else "movie is not good for you")

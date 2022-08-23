@@ -12,6 +12,7 @@ def say_hello(n1, n2, n3, n4):
 
 
 def say_hello_(*peoples):
+    # print(type(peoples)) tuple
     for name in peoples:
         print(f"{name}")
 
@@ -31,3 +32,25 @@ def show_details(name, *skills):
 
 
 show_details("shehab", "Python", "C++", "Java", "Kotlin")
+# =====================================================================================
+print("=" * 50)
+
+# Function Arguments packing , unpacking **Args
+
+my_dict = {
+    "Kotlin": "80%",
+    "java": "80%",
+    "Python": "70%",
+    "C++": "70%"
+}
+
+
+def say_hello1(**people):
+    # print(type(peoples)) dict
+    for key, value in people.items():
+        print(f"{key} => {value}")
+
+
+say_hello1(Python="70%", kotlin="80%")
+print("="*50)
+say_hello1(**my_dict)

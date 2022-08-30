@@ -46,5 +46,5 @@ print(f"Number Of l Is => {count}")
 
 r = 41
 while r <= 50:
-    os.remove(fr"C:\Users\shehab\Desktop\Python Toturial\python assignments\files\txt{r}.txt")
+    os.remove(fr"files\txt{r}.txt")
     r += 1

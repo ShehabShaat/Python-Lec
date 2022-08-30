@@ -54,7 +54,7 @@ print(a)
 
 # 3) remove() (remove first element from "Shehab"
 x = [1, 2, 3, 4, 5, True, "Shehab", "hello"]
-x.remove("Shehab")
+x.remove(x[6])
 print(x)
 
 # 4) sort() & reverse()

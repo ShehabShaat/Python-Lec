@@ -87,9 +87,8 @@ print(myFile.tell())  # position cursor => 7
 #
 myFile = open("seek.txt", "r")
 # myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\seek.txt, "r")
-myFile.seek(6) # Point the cursor to a specific location
+myFile.seek(6)  # Point the cursor to a specific location
 print(myFile.read())
 #
 os.remove("remove.txt")
 # os.remove(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\remove.txt")
-

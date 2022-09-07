@@ -22,3 +22,10 @@ print(sys.path)
 print(sh)
 print(dir(sh))
 sh.myName()
+# =================================================================================================
+from termcolor import colored
+from pyfiglet import figlet_format
+print(colored(figlet_format(" Sh  Shehab"),color="yellow"),end=" ")
+# print(colored(figlet_format("Shaat"),color="yellow"))
+
+

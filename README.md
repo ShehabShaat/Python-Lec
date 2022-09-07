@@ -13,7 +13,7 @@
 |10 | \xhh | Hex Value [review](https://www.freecodecamp.org/news/ascii-table-hex-to-ascii-value-character-code-chart-2/) | 
 
 
-># [Strings Formatting](https://github.com/ShehabShaat/Python/blob/master/PythonTutorial/tutorial/Formatting.py)
+># [Strings Formatting](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/Formatting.py)
 ### [- Review strings Formatting](https://pyformat.info/)
 
 ># [Python Module Index](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/BuiltInModules.py)

@@ -303,17 +303,16 @@
 #     print(f"{sum(student_marks[query_name]) / len(student_marks[query_name]):.2f}")
 
 # =================================================================================
-# myTuple = []
-# n = int(input())
-# while len(myTuple) < n:
-#     myTuple.extend(map(int, input().split()))
-# print(hash(tuple(myTuple)))
+import hashlib
+myTuple = []
+n = int(input())
+while len(myTuple) < n:
+    myTuple.extend(map(int, input().split()))
+print(hash(tuple(myTuple)))
 # #  ========or========
 # n = int(input())
 # print(hash(tuple(map(int, input().split()))))
 
 
 # =================================================================================
-# print(hex(10))
-
 

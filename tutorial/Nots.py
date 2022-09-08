@@ -304,15 +304,17 @@
 
 # =================================================================================
 import hashlib
-myTuple = []
-n = int(input())
-while len(myTuple) < n:
-    myTuple.extend(map(int, input().split()))
-print(hash(tuple(myTuple)))
+# myTuple = []
+# n = int(input())
+# while len(myTuple) < n:
+#     myTuple.extend(tuple(map(int, input().split())))
+# print(hash(myTuple))
 # #  ========or========
 # n = int(input())
 # print(hash(tuple(map(int, input().split()))))
 
-
+# n = int(input())
+# integer_list = tuple(map(int, input().split()))
+# print(hash(integer_list))
 # =================================================================================
 

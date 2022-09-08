@@ -3,8 +3,7 @@
 # print(f"random flouting number {round(random.random())}")
 # print(random)
 # print(dir(random))
-
-
+import os
 from random import randint, randrange, random
 
 print(f"Print Random Range {randrange(0, 10)}")
@@ -25,7 +24,10 @@ sh.myName()
 # =================================================================================================
 from termcolor import colored
 from pyfiglet import figlet_format
-print(colored(figlet_format(" Sh  Shehab"),color="yellow"),end=" ")
+import datetime
+
+print(colored(figlet_format(" Sh  Shehab"), color="yellow"), end=" ")
 # print(colored(figlet_format("Shaat"),color="yellow"))
-
-
+my_name = open(r"C:\Users\shehab\Desktop\Python Toturial\my_name.txt", "w")
+my_name.write(colored(figlet_format(" Sh  Shehab"), color="yellow"))
+#

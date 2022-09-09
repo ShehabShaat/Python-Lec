@@ -42,9 +42,19 @@ print(f"i lived {lived} ")
 # ======================strftime=============================
 # review https://strftime.org/
 print(myBirthDay.date())
-print(myBirthDay.strftime("%d"),end=" ")
-print(myBirthDay.strftime("%B"),end=" ")
+print(myBirthDay.strftime("%d"), end=" ")
+print(myBirthDay.strftime("%B"), end=" ")
 print(myBirthDay.strftime("%Y"))
 # or
 print(myBirthDay.strftime("%d %B %Y"))
 print(myBirthDay.strftime("%d %B %y"))
+
+myDateList = []
+while len(myDateList) < 3:
+    myDateList.extend(map(int, input().split()))
+
+mm = myDateList[0]
+dd = myDateList[1]
+yy = myDateList[2]
+yourBirthDay = datetime.datetime(yy, mm, dd)
+print(yourBirthDay.strftime("%A").upper())

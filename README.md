@@ -26,5 +26,8 @@
 ># [PIP Manual](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/BuiltInModules.py)
 ### [- Review PIP Manual](https://pip.pypa.io/en/stable/reference/pip_install/)
 
+># [Python strftime](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/DateAndTime.py)
+### [- Review strftime cheatsheet](https://strftime.org/)
+
 [//]: # (># [Python 3.9 | 🔥]&#40;&#41;)
 > ### Python 3.9 | 🔥 New [review](https://www.youtube.com/watch?v=wGd0fdJ7cnY)

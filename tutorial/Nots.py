@@ -304,6 +304,7 @@
 
 # =================================================================================
 import hashlib
+
 # myTuple = []
 # n = int(input())
 # while len(myTuple) < n:
@@ -317,3 +318,183 @@ import hashlib
 # integer_list = tuple(map(int, input().split()))
 # print(hash(integer_list))
 # =================================================================================
+# import textwrap
+#
+#
+# def wrap(string, max_width):
+#     return textwrap.fill(string, max_width)
+#
+#
+# if __name__ == '__main__':
+#     string, max_width = input(), int(input())
+#     result = wrap(string, max_width)
+#     print(result)
+#
+# =================================================================================
+
+# x = int(input())
+# set1 = set(input().split())
+# y = int(input())
+# set2 = set(input().split())
+#
+#
+# print(len(set1.intersection(set2)))
+# =================================================================================
+
+# x = int(input())
+# set1 = set(input().split())
+# y = int(input())
+# set2 = set(input().split())
+# print(len(set1.union(set2)))
+
+# =================================================================================
+# T = int(input())
+# while T > 0:
+#     A = int(input())
+#     setA = set(input().split())
+#     B = int(input())
+#     setB = set(input().split())
+#     print(setA.issubset(setB))
+#     T -= 1
+# =================================================================================
+# A = set(input().split())
+# T = int(input())
+# myList=[]
+# for i in range(T):
+#     setT = set(input().split())
+#     myList.append(A.issuperset(setT))
+#
+# print(all(myList))
+# print(myList)
+# =================================================================================
+
+#
+# A = int(input())
+# setA = set(map(int,input().split()))
+# otherSet = int(input())
+# for i in range(otherSet):
+#     strInput = input().split()
+#     if strInput[0] == "intersection_update":
+#         setA.intersection_update(map(int, input().split()))
+#     elif strInput[0] == "update":
+#         setA.update(map(int, input().split()))
+#     elif strInput[0] == "symmetric_difference_update":
+#         setA.symmetric_difference_update(map(int, input().split()))
+#     elif strInput[0] == "difference_update":
+#         setA.difference_update(map(int, input().split()))
+#     else:
+#         print("invalid input")
+# print(sum(setA))
+# ================================================================================================
+# n = int(input())
+# List = tuple(map(int, input().split()))
+# print(hash(List))
+
+# ================================================
+# n =input()
+# eval(n)
+# =========================================================================================
+
+# thickness = int(input())  # This must be an odd number
+# c = 'H'
+#
+# # Top Cone
+# for i in range(thickness):
+#     print((c * i).rjust(thickness - 1) + c + (c * i).ljust(thickness - 1))
+# # Top Pillars
+# for i in range(thickness + 1):
+#     print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
+# # Middle Belt
+# for i in range((thickness + 1) // 2):
+#     print((c * thickness * 5).center(thickness * 6))
+# # Bottom Pillars
+# for i in range(thickness + 1):
+#     print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
+#
+# # Bottom Cone
+# for i in range(thickness):
+#     print(((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(
+#         thickness * 6))
+# =========================================================================================
+from unicodedata import decimal
+
+#
+# def print_formatted(number):
+#     width = len("{0:b}".format(number))
+#     for i in range(1, number + 1):
+#         print("{0:{width}d} {0:{width}o} {0:{width}X} {0:{width}b}".format(i, width=width))
+#
+#
+# #
+# if __name__ == '__main__':
+#     n = int(input())
+#     print_formatted(n)
+
+# ==================================================================================
+# x = list(map(int, input().split()))
+# List = []
+# for row in range(x[1]):
+#     # List.insert(row, list(map(float, input().split())))
+#     List += [list(map(float, input().split()))]
+#
+# # print( list(zip(*List)))
+# for index in list(zip(*List)):
+#     print(f"{sum(index)/len(index):.1f}")
+
+# ==================================================================================
+# def my_decorator(fun):
+#     def nested_fun(num):
+#         for s in num:
+#             print(f"+91 {s}")
+#         # fun(num)
+#
+#     return nested_fun
+#
+#
+# @my_decorator
+# def sort_phone(l):
+#     print(*sorted(l), sep='\n')
+#
+#
+# if __name__ == '__main__':
+#     l = [input() for _ in range(int(input()))]
+#     sort_phone(l)
+# ========================================================================================
+# my_list = []
+# n = int(input())
+# for _ in range(n):
+#     my_list.append(int(input()))
+#     my_list.sort()
+#
+#
+# def Phone_Number(number):
+#     if len(str(number)) == 10:
+#         return f"+91 {str(number)[0:5]} {str(number)[5:]}"
+#     elif len(str(number)) == 11 and str(number)[0] == "0":
+#         return f"+91 {str(number)[1:6]} {str(number)[6:]}"
+#     elif len(str(number)) == 12 and str(number)[0:2] == "91":
+#         return f"+{str(number)[0:2]} {str(number)[2:7]} {str(number)[7:]}"
+#
+#
+# for _ in (list(map(Phone_Number, my_list))):
+#     print(_)
+
+def wrapper(f):
+    def fun(l):  # nested_fun
+
+        f(["+91 " + c[-10:-5] + " " + c[-5:] for c in l])
+
+    return fun
+
+
+@wrapper
+def sort_phone(l):
+    print(*sorted(l), sep='\n')
+
+
+if __name__ == '__main__':
+    l = [input() for _ in range(int(input()))]
+    sort_phone(l)
+
+
+

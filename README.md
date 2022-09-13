@@ -29,5 +29,7 @@
 ># [Python strftime](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/DateAndTime.py)
 ### [- Review strftime cheatsheet](https://strftime.org/)
 
+># [Pillow image ](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/imageManipulation.py)
+### [- Review Pillow cheatsheet](https://pillow.readthedocs.io/en/stable/handbook/tutorial.html)
 [//]: # (># [Python 3.9 | 🔥]&#40;&#41;)
 > ### Python 3.9 | 🔥 New [review](https://www.youtube.com/watch?v=wGd0fdJ7cnY)

@@ -33,7 +33,9 @@
 ### [- Review Pillow cheatsheet](https://pillow.readthedocs.io/en/stable/handbook/tutorial.html)
 
 ># [Regular Expressions ](https://github.com/ShehabShaat/Python-Lec/blob/master/tutorial/RegularExpressions.py)
-### [- Review Regular Expressions Cheatsheet](https://www.debuggex.com/cheatsheet/regex/python)
+### [- Reg Exp Cheatsheet](https://www.debuggex.com/cheatsheet/regex/python)
 ### [- Test RegEx  ](https://pythex.org/)
+### [- Test regex101  ](https://regex101.com/)
+
 [//]: # (># [Python 3.9 | 🔥]&#40;&#41;)
 > ### Python 3.9 | 🔥 New [review](https://www.youtube.com/watch?v=wGd0fdJ7cnY)

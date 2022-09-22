@@ -17,6 +17,10 @@ class Member:
     def show_user_count(cls):
         print(f"We Have {cls.user_num} Users In Our System")
 
+    @staticmethod
+    def say_hi():
+        print(f"hi")
+
     def __init__(self, f_name, m_name, l_name, gender):
         self.f_name = f_name
         self.m_name = m_name
@@ -62,4 +66,6 @@ Member.show_user_count()
 # Static Methods:
 # - It Takes No Parameters
 # - Its Bound To The Class Not Instance
-# - Used When Doing Something Doesnt Have Access To Object Or Class But Related To Class
+# - Used When Doing Something Doesn't Have Access To Object Or Class But Related To Class
+# نستخدمها في حالة بدنا نعمل اي حاجة ستخص الكلاس بدون ما أكسكسن على الكلاس  ولا على الاوبجكت
+Member.say_hi()

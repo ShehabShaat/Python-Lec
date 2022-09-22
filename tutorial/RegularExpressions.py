@@ -132,3 +132,19 @@ for counter, _ in enumerate(my_search):  # counter
 
 print(re.sub("\s", "-", "I Love Python"))
 print(re.sub("\s", "-", "I Love Python", 1))
+
+# ------------------------------------------------------
+# -- Regular Expressions => Group Trainings And Flags --
+# ------------------------------------------------------
+
+import re
+
+my_web = "https://www.elzero.org:8080/category.php?article=105?name=how-to-do"
+# (https?)://(www)?\.?(\w+)\.(\w+):?(\d+)?/?(.+) ==> reg Exp url
+search = re.search(r"(https?)://(www)?\.?(\w+)\.(\w+):?(\d+)?/?(.+)", my_web, re.M)  # re.M = > multiline
+print(search.group())
+print(search.groups())
+for counter, _ in enumerate(search.groups()):
+    print(f"{counter}- {_}")
+
+print(search.group(1))

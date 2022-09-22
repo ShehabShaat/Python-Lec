@@ -39,7 +39,7 @@
 # Match Email
 # [A-z0-9\.]+@[A-z0-9]+\.[A-z]+
 # ^[A-z0-9\.]+@[A-z0-9]+\.(com|net|org|info)$
-
+# https://regex101.com/r/PoWbVs/1
 # ----------------------------------------------------
 # -- Regular Expressions => Logical Or And Escaping --
 # ----------------------------------------------------
@@ -51,3 +51,4 @@
 # (\d-|\d\)|\d>) (\w+)
 # (\d{3}) (\d{4}) (\d{3}|\(\d{3}\))
 # ^(https?://)(www\.)?(\w+)\.(net|org|com|info|me)$
+

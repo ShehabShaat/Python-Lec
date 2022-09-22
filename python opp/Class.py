@@ -24,16 +24,26 @@
 # Instance Methods Can Have More Than One Parameter Like Any Function
 # Instance Methods Can Freely Access Attributes And Methods On The Same Object
 # Instance Methods Can Access The Class Itself
-# -----------------------------------------------------------
+# ==================================================================================
+# -- Object Oriented Programming => Class Attributes --
+# -----------------------------------------------------
+# Class Attributes: Attributes Defined Outside The Constructor
 class Member:
+    not_allowed_name = ['shehab', 'essam', 'shaat']
+    user_num = 0
+
     def __init__(self, f_name, m_name, l_name, gender):
         self.f_name = f_name
         self.m_name = m_name
         self.l_name = l_name
         self.gender = gender
+        Member.user_num += 1
 
     def full_name(self):
-        return f"{self.f_name} {self.m_name} {self.l_name}"
+        if self.f_name in Member.not_allowed_name:
+            raise ValueError(" Name Not Allowed!!")
+        else:
+            return f"{self.f_name} {self.m_name} {self.l_name}"
 
     def say_hello(self):
         if self.gender == "male":
@@ -45,8 +55,17 @@ class Member:
         # return f"{Member.say_hello(self)} and your full name {Member.full_name(self)}"
         return f"{self.say_hello()} and your full name {self.full_name()}"
 
+    def delete_user(self):
+        Member.user_num -= 1
+        return f"User {self.f_name} deleted !!"
 
-member_one = Member("shehab", "essam", "shaat", "male")
+
+member_one = Member("sheHab", "essam", "shaat", "male")
+member_two = Member("abOod", "essam", "shaat", "male")
+member_three = Member("nour", "essam", "shaat", "female")
 print(member_one.full_name())
 print(member_one.say_hello())
 print(member_one.full_info())
+print(Member.user_num)
+print(member_one.delete_user())
+print(Member.user_num)

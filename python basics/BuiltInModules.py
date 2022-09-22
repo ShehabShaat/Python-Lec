@@ -16,7 +16,7 @@ print("=" * 50)
 import shehab as sh, sys
 
 print(sys.path)
-# sys.path.append(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\shehab.py'")
+# sys.path.append(r"C:\Users\shehab\Desktop\Python Toturial\python basics\shehab.py'")
 
 print(sh)
 print(dir(sh))

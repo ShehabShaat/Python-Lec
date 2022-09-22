@@ -29,7 +29,7 @@ import os
 #
 # # ===================================Read File========================================
 # print("=" * 50)
-# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\shehab.txt", "r")
+# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\python basics\files\shehab.txt", "r")
 # print(os.getcwd())
 # print(myFile)  # Data object
 # print(myFile.name)
@@ -54,7 +54,7 @@ import os
 # ===================================Write and Append In File=======================================
 
 
-print(os.chdir(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files"))
+print(os.chdir(r"/python basics\files"))
 print(os.getcwd())
 
 myFile = open("fun.txt", "w")
@@ -74,21 +74,21 @@ myFile.write("Third line\n")
 
 # ===================================Important Info=======================================
 myFile = open("truncate.txt", "a")
-# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\truncate.txt, "r")
+# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\python basics\files\truncate.txt, "r")
 
 myFile.write("Hello sheHAb\n")
 myFile.truncate(5)  # Cut the first 5 letters => Hello
 
 myFile = open("tell.txt", "a")
-# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\tell.txt, "r")
+# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\python basics\files\tell.txt, "r")
 
 myFile.write("Hello\n")  # \n =>  "2 char"
 print(myFile.tell())  # position cursor => 7
 #
 myFile = open("seek.txt", "r")
-# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\seek.txt, "r")
+# myFile = open(r"C:\Users\shehab\Desktop\Python Toturial\python basics\files\seek.txt, "r")
 myFile.seek(6)  # Point the cursor to a specific location
 print(myFile.read())
 #
 os.remove("remove.txt")
-# os.remove(r"C:\Users\shehab\Desktop\Python Toturial\tutorial\files\remove.txt")
+# os.remove(r"C:\Users\shehab\Desktop\Python Toturial\python basics\files\remove.txt")

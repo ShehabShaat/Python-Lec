@@ -19,6 +19,8 @@ my_family = ["shehab", "essam", "diya", "abed", "nour", "yasser", "huda", "ryan"
 
 # delete data
 # cr.execute(f"delete from family where user_id={name_id} and user_name='{name}' ")
+# or
+# cr.execute(f"delete from family )
 
 # update table
 # cr.execute("update  family set user_name = 'ShehabEldin' where user_name = 'shehab';")

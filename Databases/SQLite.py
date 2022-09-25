@@ -18,7 +18,7 @@ my_family = ["shehab", "essam", "diya", "abed", "nour", "yasser", "huda", "ryan"
 #     cr.execute(f"insert into family (user_id,user_name) VALUES ({name_id},'{name}')")
 
 # delete data
-# cr.execute(f"delete from family where user_id={name_id} and user_name='{name}' ")
+# cr.execute(f"delete from family where user_id={name_id}")
 # or
 # cr.execute(f"delete from family )
 

@@ -7,7 +7,8 @@ class BaseOne:
     def __init__(self):
         print("Base One")
 
-    def func_one(self):
+    @staticmethod
+    def func_one():
         print("One")
 
 
@@ -16,7 +17,8 @@ class BaseTwo:
     def __init__(self):
         print("Base Two")
 
-    def func_two(self):
+    @staticmethod
+    def func_two():
         print("Two")
 
 

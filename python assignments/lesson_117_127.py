@@ -17,6 +17,7 @@ cr = db.cursor()
 # Create The table and field
 cr.execute("CREATE TABLE if not exists users (user_id integer unique ,user_name text unique ,date text  ,email text  "
            "unique )")
+
 # ========================================assignment 3=============================================================
 # insert data
 

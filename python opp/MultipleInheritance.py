@@ -23,7 +23,9 @@ class BaseTwo:
 
 
 class Derived(BaseOne, BaseTwo):
-    pass
+    def __init__(self):
+        BaseOne.__init__(self)
+        BaseTwo.__init__(self)
 
 
 myVar = Derived()

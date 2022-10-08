@@ -54,6 +54,7 @@ print(a)
 # 3) remove() (remove first element from "Shehab"
 x = [1, 2, 3, 4, 5, True, "Shehab", "hello"]
 x.remove(x[6])
+# you can also remove elements from your list. You can do this with the del statement
 # del(x[6])
 print(x)
 

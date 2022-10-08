@@ -51,10 +51,10 @@ print(a)
 c = ["one", "Two"]
 a.extend(c)
 print(a)
-
 # 3) remove() (remove first element from "Shehab"
 x = [1, 2, 3, 4, 5, True, "Shehab", "hello"]
 x.remove(x[6])
+# del(x[6])
 print(x)
 
 # 4) sort() & reverse()
@@ -81,6 +81,8 @@ print(a)
 # 6) copy()
 b = [1, 2, 3]
 c = b.copy()  # shallow copy of the list.
+# c = list(b) old method
+# c = b[:] old method
 print(b)  # Main list
 print(c)  # copied List
 

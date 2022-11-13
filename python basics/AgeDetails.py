@@ -28,4 +28,4 @@ elif unit == "minutes":
 elif unit == "second":
     print(f"you lived for {minutes:,} second ")
 else:
-    print("Please , choose uni ")
+    print("Please , choose unit ")

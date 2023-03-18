@@ -38,8 +38,7 @@ print("=" * 50)
 
 skills = ["HTML", "CSS", "JavaScript", "PHP", "Python"]
 while skills:
-    print(skills)
-    break
+    print(skills.pop(0))
 # # ===============================assignment 4======================================
 my_friends = []
 numberFriend = 4

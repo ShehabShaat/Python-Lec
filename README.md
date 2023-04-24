@@ -40,7 +40,6 @@
 [//]: # (># [Python 3.9 | 🔥]&#40;&#41;)
 > ### Python 3.9 | 🔥 New [review](https://www.youtube.com/watch?v=wGd0fdJ7cnY)
 > 
-> Resources 
 
->### Interactive book [Avatar
-Ahmed Darwish][https://42ahmed.github.io/mastering-python/intro.html]
+
+>### Interactive book [Ahmed Darwish][https://42ahmed.github.io/mastering-python/intro.html]
